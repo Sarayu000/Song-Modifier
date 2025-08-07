@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevOps Lifecycle Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .diagram {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 900px;
+    }
+
+    .stage {
+      background: #ffffff;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+    }
+
+    .plan { background-color: #6a5acd; }
+    .develop { background-color: #1e90ff; }
+    .build { background-color: #20b2aa; }
+    .test { background-color: #32cd32; }
+    .release { background-color: #ffa500; }
+    .deploy { background-color: #ff6347; }
+    .operate { background-color: #dc143c; }
+    .monitor { background-color: #8a2be2; }
+
+    .explanation {
+      margin-top: 40px;
+      max-width: 900px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .explanation h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .explanation p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      .diagram {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle</h1>
+  <div class="diagram">
+    <div class="stage plan">Plan</div>
+    <div class="stage develop">Develop</div>
+    <div class="stage build">Build</div>
+    <div class="stage test">Test</div>
+    <div class="stage release">Release</div>
+    <div class="stage deploy">Deploy</div>
+    <div class="stage operate">Operate</div>
+    <div class="stage monitor">Monitor</div>
+  </div>
+
+  <div class="explanation">
+    <h2>Stages Explained</h2>
+    <p><strong>Plan:</strong> Define project goals, requirements, and tasks collaboratively.</p>
+    <p><strong>Develop:</strong> Write and review code, implementing the planned features.</p>
+    <p><strong>Build:</strong> Compile code and create executable files or containers.</p>
+    <p><strong>Test:</strong> Automatically test code for bugs and performance issues.</p>
+    <p><strong>Release:</strong> Approve and package builds for production readiness.</p>
+    <p><strong>Deploy:</strong> Deliver the release to production environments.</p>
+    <p><strong>Operate:</strong> Run and maintain the application in the live environment.</p>
+    <p><strong>Monitor:</strong> Track system health, performance, and usage analytics.</p>
+  </div>
+</body>
+</html>
